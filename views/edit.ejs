@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Post</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Edit Post</h1>
+    <form action="/edit/<%= post.id %>" method="POST">
+      <input type="text" name="title" value="<%= post.title %>" required>
+
+      <input type="text" name="author" value="<%= post.author %>" required>
+
+      <select name="category" required>
+        <option value="Tech" <%= post.category === 'Tech' ? 'selected' : '' %>>Tech</option>
+        <option value="Lifestyle" <%= post.category === 'Lifestyle' ? 'selected' : '' %>>Lifestyle</option>
+        <option value="Study" <%= post.category === 'Study' ? 'selected' : '' %>>Study</option>
+        <option value="Travel" <%= post.category === 'Travel' ? 'selected' : '' %>>Travel</option>
+      </select>
+
+      <textarea name="content" required><%= post.content %></textarea>
+
+      <button type="submit">Update</button>
+    </form>
+
+    <a href="/" class="back-btn">← Back</a>
+  </div>
+</body>
+</html>
