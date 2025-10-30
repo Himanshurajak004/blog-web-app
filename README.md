@@ -17,7 +17,7 @@ Users can create, edit, and delete blog posts with author names and categories.
 
 ## ⚙️ Run 
 # 1. Clone the repository
-git clone https://github.com/yourusername/blog-web-app.git
+git clone https://github.com/Himanshurajak004/blog-web-app.git
 
 # 2. Go inside the folder
 cd blog-web-app
